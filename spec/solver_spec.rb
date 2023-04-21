@@ -23,17 +23,13 @@ describe Solver do
   describe '#reverse' do
     it 'returns the reverse of a given string' do
       solver = Solver.new
-
       expect(solver.reverse('hello')).to eq('olleh')
       expect(solver.reverse('')).to eq('')
       expect(solver.reverse('12345')).to eq('54321')
     end
   end
 
-
   # fizzbuzz Method
-
-
   describe '#fizzbuzz' do
     solver = Solver.new
     context 'when given a number divisible by 3' do
