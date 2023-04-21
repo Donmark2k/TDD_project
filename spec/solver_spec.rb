@@ -35,31 +35,32 @@ describe Solver do
 
 
   describe '#fizzbuzz' do
+    solver = Solver.new
     context 'when given a number divisible by 3' do
       it 'returns "fizz"' do
-        expect(Solver.fizzbuzz(3)).to eq('fizz')
-        expect(Solver.fizzbuzz(9)).to eq('fizz')
+        expect(solver.fizzbuzz(3)).to eq('fizz')
+        expect(solver.fizzbuzz(9)).to eq('fizz')
       end
     end
 
     context 'when given a number divisible by 5' do
       it 'returns "buzz"' do
-        expect(Solver.fizzbuzz(5)).to eq('buzz')
-        expect(Solver.fizzbuzz(20)).to eq('buzz')
+        expect(solver.fizzbuzz(5)).to eq('buzz')
+        expect(solver.fizzbuzz(20)).to eq('buzz')
       end
     end
 
     context 'when given a number divisible by both 3 and 5' do
       it 'returns "fizzbuzz"' do
-        expect(Solver.fizzbuzz(15)).to eq('fizzbuzz')
-        expect(Solver.fizzbuzz(45)).to eq('fizzbuzz')
+        expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+        expect(solver.fizzbuzz(45)).to eq('fizzbuzz')
       end
     end
 
     context 'when given a number not divisible by 3 or 5' do
       it 'returns the number as a string' do
-        expect(Solver.fizzbuzz(1)).to eq('1')
-        expect(Solver.fizzbuzz(7)).to eq('7')
+        expect(solver.fizzbuzz(1)).to eq('1')
+        expect(solver.fizzbuzz(7)).to eq('7')
       end
     end
   end
