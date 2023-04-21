@@ -22,7 +22,7 @@ describe Solver do
   # Reverse Method
   describe '#reverse' do
     it 'returns the reverse of a given string' do
-        solver = Solver.new
+      solver = Solver.new
 
       expect(solver.reverse('hello')).to eq('olleh')
       expect(solver.reverse('')).to eq('')
