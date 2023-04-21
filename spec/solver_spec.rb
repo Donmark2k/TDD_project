@@ -22,9 +22,11 @@ describe Solver do
   # Reverse Method
   describe '#reverse' do
     it 'returns the reverse of a given string' do
-      expect(Solver.reverse('hello')).to eq('olleh')
-      expect(Solver.reverse('')).to eq('')
-      expect(Solver.reverse('12345')).to eq('54321')
+        solver = Solver.new
+
+      expect(solver.reverse('hello')).to eq('olleh')
+      expect(solver.reverse('')).to eq('')
+      expect(solver.reverse('12345')).to eq('54321')
     end
   end
 
